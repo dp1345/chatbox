@@ -2,11 +2,10 @@ const cors = {
     origin: "http://127.0.0.1:5500", // Replace with your client's origin
     methods: ["GET", "POST"] // Specify the HTTP methods you want to allow
 };
-var io = require('socket.io')(8080,{cors})
+const io = require('socket.io')(8080,{cors})
 //   const ioWithCors = new Server(server, {
 //     cors
 //   });
-
 
 const users = {};
 
